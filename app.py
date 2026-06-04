@@ -11,7 +11,7 @@ st.markdown("---")
 
 try:
     # Memuat dataset internal (Membuat fitur panjang kata secara realtime)
-    df = pd.read_csv('cleaned_prediction_data.csv')
+    df = pd.read_csv('cleaned_prediction_data.csv.gz')
     df['title_length'] = df['product_title'].astype(str).apply(len)
     
     st.subheader("📌 Ringkasan Parameter Kebersihan Data")
